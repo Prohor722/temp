@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/6dd3ae24df.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./images/logo/logo.png" alt="Logo" height="50">
+              </a>
+              <form class="d-flex align-items-center nav-search">
+                <input class="form-control me-2 rounded-pill border-0" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn border-0 text-dark p-0" id="search-icon" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto me-5 d-flex justify-content-center align-items-center">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bell fs-5"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" title="message" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-comment-alt fs-5"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">group message 1</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">group message 2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">group message 3</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">see all</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./images/users/Teacher.jpg" class="rounded-circle border border-3 border-primary" height="50" alt="" srcset="">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">
+                        Students
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Groups
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        Add Group
+                    </a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3 bg bg-light py-5">
+              <form class="">
+                <h4 class="mb-3 text-center">Add Task</h4>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Task Title</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Description</label>
+                  <textarea type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"></textarea>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Course Code</label>
+                  <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Deadline</label>
+                  <input type="date" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+
+              <h4 class="mt-5 mb-3 text-center">Previous Tasks</h4>
+              <ul>
+                <li class="fw-bold">Project Report<i class="fas fa-circle text-success ms-2"></i></li>
+                <li>Project Proposal</li>
+                <li>Project Presentation Slide</li>
+                <li>Project Demo</li>
+              </ul>
+            </div>
+            <div class="col-md-9 bg bg-warning py-5">
+              <div class="ms-auto">
+                <a class="btn btn-dark m-2" href="https://google.com">New</a>
+              </div>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">UID</th>
+                    <th scope="col">Student Name</th>
+                    <th scope="col">Course Code</th>
+                    <th scope="col">Course Title</th>
+                    <th scope="col">Group ID</th>
+                    <th scope="col">Project Title</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  <tr>
+                    <td>UG02-15-10-046</td>
+                    <td>Neyamul haque al baker sinha</td>
+                    <td>CSE-0400</td>
+                    <td>Differiencial Equation of Mathmatics</td>
+                    <td>GCSE-0421</td>
+                    <td>System analatical design on processor of embedad system</td>
+                    <td>neyamul.haque0937sinha428@yahoo.com</td>
+                    <td>+08812345678912</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+    </main>
+    <footer>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+    </footer>
+</body>
+</html>
